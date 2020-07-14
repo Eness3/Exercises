@@ -4,7 +4,7 @@
 
 #include"stm32f303xx_gpio_driver.h"
 
-void delay(void)
+void f(void)
 {
 	for(int i = 0; i<100000; ++i);
 }
@@ -25,7 +25,7 @@ int main(void)
 	while(1){
 
 	GPIO_ToggleOutputPin(GPIOB,GPIO_PIN_NO_3);
-	delay();
+	delayf();
 	}
 
 
